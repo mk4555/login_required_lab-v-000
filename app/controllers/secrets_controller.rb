@@ -3,7 +3,7 @@ class SecretsController < ApplicationController
     if current_user
       @secret = "HELLO WORLD"
     else
-      redirect_to '/login'
+      redirect_to '/'
     end
   end
 end

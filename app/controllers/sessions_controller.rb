@@ -7,7 +7,6 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       session[:name] = params[:name]
-      current_user = params[:name]
     end
   end
 

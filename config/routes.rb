@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   get '/secret' => 'secrets#show'
   get '/' => 'sessions#new'
-  post '/create'
+  post '/create' => 'sessions#new'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

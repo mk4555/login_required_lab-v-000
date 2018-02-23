@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/secret' => 'secrets#show'
   get '/' => 'sessions#new'
   post 'sessions/create' => 'sessions#create'
+  post 'sessions/destroy' => 'sessions#destroy'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
